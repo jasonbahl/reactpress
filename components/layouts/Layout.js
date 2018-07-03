@@ -1,19 +1,23 @@
 import Header from "../ui/Header";
-import Root from "../../components/Root";
 import Navigation from "../ui/Navigation";
 import Container from "../ui/Container";
 import config from "../../services/publicConfig";
 
 const Layout = ({ children }) => (
-  <Root>
-    <Container>
-      <Header>
-        <h1>REACTPRESS DEMO</h1>
-      </Header>
-      <Navigation links={config.mainMenuLinks} />
-      <div>{children}</div>
-    </Container>
-  </Root>
+  <div>
+    <Header>
+      <Container>
+        <h1>{config.siteInformations.name}</h1>
+        <h2>{config.siteInformations.slogan}</h2>
+      </Container>
+    </Header>
+    <div style={{ paddingBottom: "4rem" }}>
+      <Container>
+        <Navigation links={config.mainMenuLinks} />
+        <div>{children}</div>
+      </Container>
+    </div>
+  </div>
 );
 
 export default Layout;
