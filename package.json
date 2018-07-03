@@ -25,7 +25,8 @@
     "qs": "^6.5.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "style-loader": "^0.21.0"
+    "style-loader": "^0.21.0",
+    "wpapi": "^1.1.2"
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^3.1.1"
